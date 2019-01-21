@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="task_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aRJ-6X-Lyr"/>
+                        <viewControllerLayoutGuide type="bottom" id="ba1-S7-Pkb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBx-tK-m9R">
+                                <rect key="frame" x="87" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="rotate"/>
+                                <connections>
+                                    <action selector="rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dvl-OM-byh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqs-P9-kY7">
+                                <rect key="frame" x="16" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="scale"/>
+                                <connections>
+                                    <action selector="scale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSj-Al-va7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afZ-AK-yRb">
+                                <rect key="frame" x="204" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="bleach"/>
+                                <connections>
+                                    <action selector="bleach:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWz-zy-bw2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpc-lR-s1h">
+                                <rect key="frame" x="258" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Two"/>
+                                <connections>
+                                    <action selector="twoActions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EzW-aa-lKE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jx-yJ-Bqj">
+                                <rect key="frame" x="141" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="move"/>
+                                <connections>
+                                    <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fyH-iS-FQf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ccd-yb-uWK" appends="YES" id="4z7-ad-GnS"/>
+                            <outletCollection property="gestureRecognizers" destination="BLF-nX-TGI" appends="YES" id="T4d-KV-zOi"/>
+                            <outletCollection property="gestureRecognizers" destination="guM-I4-lDJ" appends="YES" id="NMz-US-92W"/>
+                            <outletCollection property="gestureRecognizers" destination="8ax-8O-apT" appends="YES" id="k9a-1j-lFY"/>
+                            <outletCollection property="gestureRecognizers" destination="wlB-JN-NEc" appends="YES" id="7F0-VA-okc"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ccd-yb-uWK">
+                    <connections>
+                        <action selector="tap:" destination="BYZ-38-t0r" id="mBi-bG-54q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="BLF-nX-TGI">
+                    <connections>
+                        <action selector="longTap:" destination="BYZ-38-t0r" id="gWV-Es-tmd"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pinchGestureRecognizer id="guM-I4-lDJ">
+                    <connections>
+                        <action selector="pinch:" destination="BYZ-38-t0r" id="D8E-Um-C2z"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="8ax-8O-apT">
+                    <connections>
+                        <action selector="rotation:" destination="BYZ-38-t0r" id="x7J-Dy-a00"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="wlB-JN-NEc">
+                    <connections>
+                        <action selector="swipe:" destination="BYZ-38-t0r" id="AbJ-EA-dnN"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
