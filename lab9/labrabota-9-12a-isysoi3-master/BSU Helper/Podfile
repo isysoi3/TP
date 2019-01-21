@@ -1,0 +1,7 @@
+platform :ios, '10.0'
+
+target 'BSU Helper' do
+  use_frameworks!
+
+  pod 'SnapKit'
+end

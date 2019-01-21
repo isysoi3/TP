@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A8271CC73E712A92B6207C /* Pods_Vitebsk_Mus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83280F82AC6939D736CD8DBA /* Pods_Vitebsk_Mus.framework */; };
+		D3099C6D209CEC5D00DB8F57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3099C6C209CEC5D00DB8F57 /* AppDelegate.swift */; };
+		D3099C6F209CEC5D00DB8F57 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3099C6E209CEC5D00DB8F57 /* MapViewController.swift */; };
+		D3099C74209CEC5D00DB8F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3099C73209CEC5D00DB8F57 /* Assets.xcassets */; };
+		D3099C77209CEC5D00DB8F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3099C75209CEC5D00DB8F57 /* LaunchScreen.storyboard */; };
+		D3099C7F209D036500DB8F57 /* MuseumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3099C7E209D036500DB8F57 /* MuseumsViewController.swift */; };
+		D3099C82209D061F00DB8F57 /* Museums.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3099C80209D061F00DB8F57 /* Museums.xcdatamodeld */; };
+		D3EF52CF209F178700B9A77A /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF52CE209F178700B9A77A /* WeatherService.swift */; };
+		D3EF52D2209F187600B9A77A /* MuseumsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF52D1209F187600B9A77A /* MuseumsViewProtocol.swift */; };
+		D3EF52D4209F188300B9A77A /* MuseumsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF52D3209F188300B9A77A /* MuseumsPresenter.swift */; };
+		D3EF52D6209F1C2E00B9A77A /* WeatherResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF52D5209F1C2E00B9A77A /* WeatherResponseParser.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0590E7916D3C3C2BE263162B /* Pods-Vitebsk Mus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vitebsk Mus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vitebsk Mus/Pods-Vitebsk Mus.debug.xcconfig"; sourceTree = "<group>"; };
+		4077AD30D6F73300A7738429 /* Pods-Vitebsk Mus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vitebsk Mus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vitebsk Mus/Pods-Vitebsk Mus.release.xcconfig"; sourceTree = "<group>"; };
+		83280F82AC6939D736CD8DBA /* Pods_Vitebsk_Mus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vitebsk_Mus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3099C69209CEC5D00DB8F57 /* Vitebsk Mus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vitebsk Mus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3099C6C209CEC5D00DB8F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3099C6E209CEC5D00DB8F57 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D3099C73209CEC5D00DB8F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3099C76209CEC5D00DB8F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3099C78209CEC5D00DB8F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3099C7E209D036500DB8F57 /* MuseumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumsViewController.swift; sourceTree = "<group>"; };
+		D3099C81209D061F00DB8F57 /* Museums.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Museums.xcdatamodel; sourceTree = "<group>"; };
+		D3EF52CE209F178700B9A77A /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		D3EF52D1209F187600B9A77A /* MuseumsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumsViewProtocol.swift; sourceTree = "<group>"; };
+		D3EF52D3209F188300B9A77A /* MuseumsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseumsPresenter.swift; sourceTree = "<group>"; };
+		D3EF52D5209F1C2E00B9A77A /* WeatherResponseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseParser.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3099C66209CEC5D00DB8F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09A8271CC73E712A92B6207C /* Pods_Vitebsk_Mus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		789464F1983993DEE2597B37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83280F82AC6939D736CD8DBA /* Pods_Vitebsk_Mus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A84B6337A6379459C6B7EEAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0590E7916D3C3C2BE263162B /* Pods-Vitebsk Mus.debug.xcconfig */,
+				4077AD30D6F73300A7738429 /* Pods-Vitebsk Mus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3099C60209CEC5D00DB8F57 = {
+			isa = PBXGroup;
+			children = (
+				D3099C6B209CEC5D00DB8F57 /* Vitebsk Mus */,
+				D3099C6A209CEC5D00DB8F57 /* Products */,
+				A84B6337A6379459C6B7EEAA /* Pods */,
+				789464F1983993DEE2597B37 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3099C6A209CEC5D00DB8F57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3099C69209CEC5D00DB8F57 /* Vitebsk Mus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3099C6B209CEC5D00DB8F57 /* Vitebsk Mus */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF52D0209F186500B9A77A /* Service */,
+				D3EF52CB209F13A900B9A77A /* Screens */,
+				D3099C6C209CEC5D00DB8F57 /* AppDelegate.swift */,
+				D3099C73209CEC5D00DB8F57 /* Assets.xcassets */,
+				D3099C75209CEC5D00DB8F57 /* LaunchScreen.storyboard */,
+				D3099C78209CEC5D00DB8F57 /* Info.plist */,
+				D3099C80209D061F00DB8F57 /* Museums.xcdatamodeld */,
+			);
+			path = "Vitebsk Mus";
+			sourceTree = "<group>";
+		};
+		D3EF52CB209F13A900B9A77A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF52CC209F13C000B9A77A /* Map */,
+				D3EF52CD209F13C900B9A77A /* Museum info */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D3EF52CC209F13C000B9A77A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D3099C6E209CEC5D00DB8F57 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D3EF52CD209F13C900B9A77A /* Museum info */ = {
+			isa = PBXGroup;
+			children = (
+				D3099C7E209D036500DB8F57 /* MuseumsViewController.swift */,
+				D3EF52D1209F187600B9A77A /* MuseumsViewProtocol.swift */,
+				D3EF52D3209F188300B9A77A /* MuseumsPresenter.swift */,
+			);
+			path = "Museum info";
+			sourceTree = "<group>";
+		};
+		D3EF52D0209F186500B9A77A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D3EF52CE209F178700B9A77A /* WeatherService.swift */,
+				D3EF52D5209F1C2E00B9A77A /* WeatherResponseParser.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3099C68209CEC5D00DB8F57 /* Vitebsk Mus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3099C7B209CEC5D00DB8F57 /* Build configuration list for PBXNativeTarget "Vitebsk Mus" */;
+			buildPhases = (
+				ED742022A5B18CDC536C86E7 /* [CP] Check Pods Manifest.lock */,
+				D3099C65209CEC5D00DB8F57 /* Sources */,
+				D3099C66209CEC5D00DB8F57 /* Frameworks */,
+				D3099C67209CEC5D00DB8F57 /* Resources */,
+				EE16D8C07643FC71B59257F7 /* [CP] Embed Pods Frameworks */,
+				461F19EBDFCE2041A6DDC6AD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vitebsk Mus";
+			productName = "Vitebsk Mus";
+			productReference = D3099C69209CEC5D00DB8F57 /* Vitebsk Mus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3099C61209CEC5D00DB8F57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = isysoi;
+				TargetAttributes = {
+					D3099C68209CEC5D00DB8F57 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = D3099C64209CEC5D00DB8F57 /* Build configuration list for PBXProject "Vitebsk Mus" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3099C60209CEC5D00DB8F57;
+			productRefGroup = D3099C6A209CEC5D00DB8F57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3099C68209CEC5D00DB8F57 /* Vitebsk Mus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3099C67209CEC5D00DB8F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3099C77209CEC5D00DB8F57 /* LaunchScreen.storyboard in Resources */,
+				D3099C74209CEC5D00DB8F57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		461F19EBDFCE2041A6DDC6AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vitebsk Mus/Pods-Vitebsk Mus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED742022A5B18CDC536C86E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Vitebsk Mus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE16D8C07643FC71B59257F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Vitebsk Mus/Pods-Vitebsk Mus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vitebsk Mus/Pods-Vitebsk Mus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3099C65209CEC5D00DB8F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EF52CF209F178700B9A77A /* WeatherService.swift in Sources */,
+				D3099C6F209CEC5D00DB8F57 /* MapViewController.swift in Sources */,
+				D3EF52D6209F1C2E00B9A77A /* WeatherResponseParser.swift in Sources */,
+				D3099C7F209D036500DB8F57 /* MuseumsViewController.swift in Sources */,
+				D3099C6D209CEC5D00DB8F57 /* AppDelegate.swift in Sources */,
+				D3EF52D2209F187600B9A77A /* MuseumsViewProtocol.swift in Sources */,
+				D3EF52D4209F188300B9A77A /* MuseumsPresenter.swift in Sources */,
+				D3099C82209D061F00DB8F57 /* Museums.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3099C75209CEC5D00DB8F57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3099C76209CEC5D00DB8F57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3099C79209CEC5D00DB8F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3099C7A209CEC5D00DB8F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3099C7C209CEC5D00DB8F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0590E7916D3C3C2BE263162B /* Pods-Vitebsk Mus.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3EBJ8K5KL;
+				INFOPLIST_FILE = "Vitebsk Mus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tp.Vitebsk-Mus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3099C7D209CEC5D00DB8F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4077AD30D6F73300A7738429 /* Pods-Vitebsk Mus.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3EBJ8K5KL;
+				INFOPLIST_FILE = "Vitebsk Mus/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tp.Vitebsk-Mus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3099C64209CEC5D00DB8F57 /* Build configuration list for PBXProject "Vitebsk Mus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3099C79209CEC5D00DB8F57 /* Debug */,
+				D3099C7A209CEC5D00DB8F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3099C7B209CEC5D00DB8F57 /* Build configuration list for PBXNativeTarget "Vitebsk Mus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3099C7C209CEC5D00DB8F57 /* Debug */,
+				D3099C7D209CEC5D00DB8F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D3099C80209D061F00DB8F57 /* Museums.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3099C81209D061F00DB8F57 /* Museums.xcdatamodel */,
+			);
+			currentVersion = D3099C81209D061F00DB8F57 /* Museums.xcdatamodel */;
+			path = Museums.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3099C61209CEC5D00DB8F57 /* Project object */;
+}

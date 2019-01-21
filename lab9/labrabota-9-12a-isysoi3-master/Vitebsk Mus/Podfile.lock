@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (4.6.0)
+  - MBProgressHUD (1.0.0)
+  - Result (3.2.4)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - MBProgressHUD (~> 1.0.0)
+  - Result (~> 3.2)
+  - SnapKit
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: d51a0de1bb1c0ce3859eadd42e5d4a9c42824f88
+
+COCOAPODS: 1.4.0
