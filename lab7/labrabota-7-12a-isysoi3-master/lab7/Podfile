@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'lab7' do
+  use_frameworks!
+  pod 'SnapKit'
+  pod 'IQKeyboardManagerSwift'
+end
