@@ -5,7 +5,7 @@ Linux
 * Лабораторная работа №2 [Условие](https://drive.google.com/open?id=1HbiE-bdZlbBDLyfuGPb6lolROhXVBKUM)/[Решение](https://github.com/isysoi3/TP/tree/master/lab2)
 * Лабораторная работа №3 [Условие](https://drive.google.com/open?id=1jguatJPU5UDuSq5fHAHpx5blAr6h-dZ6)/[Решение](https://github.com/isysoi3/TP/tree/master/lab3)
 * Лабораторная работа №4 [Условие](https://drive.google.com/open?id=1YowBfFKgpCa71MzG2K9MzDW-Nmp2R1oh)/[Решение](https://github.com/isysoi3/TP/tree/master/lab4)
-* Лабораторная работа №5 [Условие](https://drive.google.com/open?id=1WrqUzdtH8kPXkquekJUiwsWbIkIPDDXn)/[Решение](https://github.com/isysoi3/TP/tree/master/lab5)
+* Лабораторная работа №5 [Условие]()/[Решение](https://github.com/isysoi3/TP/tree/master/lab5)
 
 iOS
 ------
